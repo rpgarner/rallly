@@ -20,9 +20,8 @@ Schedule group meetings with friends, colleagues and teams. Create meeting polls
 
 Built with [Next.js](https://github.com/vercel/next.js/), [Prisma](https://github.com/prisma/prisma), [tRPC](https://github.com/trpc/trpc) & [TailwindCSS](https://github.com/tailwindlabs/tailwindcss)
 
-## Self-hosting
-
-Check out the [self-hosting docs](https://support.rallly.co/self-hosting) for more information on running your own instance of Rallly.
+<details>
+<summary> Local Installation </summary>
 
 ## Local Installation
 
@@ -84,7 +83,10 @@ The following instructions are for running the project locally for development.
    ```bash
    yarn dev
    ```
+</details>
 
+<details>
+  <summary> More about Rallly </summary>
 ## Contributors
 
 Please read our [contributing guide](CONTRIBUTING.md) to learn about how to contribute to this project.
@@ -124,3 +126,5 @@ And thank you to these companies for sponsoring and showing support for this pro
 --><a href="https://cloudron.io?utm_source=rallly"><img src="./assets/images/cloudron-logo.svg" alt="Cloudron" height="30"></a>&nbsp;&nbsp;&nbsp;<!--
 --><a href="https://featurebase.app?utm_source=rallly"><img src="./assets/images/featurebase.svg" alt="Featurebase" height="28"></a>
 </p>
+
+</details>
