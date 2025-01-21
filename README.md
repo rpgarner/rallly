@@ -4,21 +4,52 @@
 
 </div>
 <br />
-<div align="center">
-  
-[![Actions Status](https://github.com/lukevella/rallly/workflows/CI/badge.svg?branch=main)](https://github.com/lukevella/rallly/actions)
-[![Crowdin](https://badges.crowdin.net/rallly/localized.svg)](https://crowdin.com/project/rallly)
-[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-orange.svg)](https://www.gnu.org/licenses/agpl-3.0)
-[![Discord](https://img.shields.io/badge/-Join%20Chat-7289DA?logo=discord&logoColor=white)](https://discord.gg/uzg4ZcHbuM)
-[![Donate](https://img.shields.io/badge/-Donate%20with%20Paypal-white?logo=paypal)](https://www.paypal.com/donate/?hosted_button_id=7QXP2CUBLY88E)
-
-</div>
 
 <img src="./assets/images/splash.png" alt="Rallly" />
 
 Schedule group meetings with friends, colleagues and teams. Create meeting polls to find the best date and time to organize an event based on your participants' availability. Save time and avoid back-and-forth emails.
 
-Built with [Next.js](https://github.com/vercel/next.js/), [Prisma](https://github.com/prisma/prisma), [tRPC](https://github.com/trpc/trpc) & [TailwindCSS](https://github.com/tailwindlabs/tailwindcss)
+## Playwright Tests 
+
+This project includes automated tests using [Playwright](https://playwright.dev/), designed to validate key functionalities of the app. Below are the details on how to set up and run these tests:
+
+### For Local Installations please expand section below. 
+ If playwright is not installed automatically, run: 
+
+ ```
+npm install -D @playwright/test@latest
+# Also download new browser binaries and their dependencies:
+npx playwright install --with-deps
+```
+
+### Running Tests
+To execute all Playwright tests, use: 
+
+```
+npx playwright test
+```
+Also recommend running in ui or debug mode to follow code with actions playwright makes. 
+
+```
+# ui mode
+npx playwright test -ui
+# debug mode
+npx playwright test --debug
+```
+### Test Descriptions
+The following Playwright tests have been implemented:
+
+1. Email Verification Test:
+     - Verifies that email-related functionality (e.g., notifications or account emails) works as expected.
+2. Poll Creation and Deletion Test:
+     - Validates the creation, upload, and deletion of polls.
+3. Poll Voting Test:
+     - Ensures participants can vote on polls, supporting the core functionality of scheduling and collaboration.
+
+#### Code Design
+ - Constants: Shared variables are stored in a constants file to improve reusability and maintainability.
+ - Helper Functions: Common actions are abstracted into helper functions to make tests concise, easier to write, and maintain. This approach simplifies creating new tests and ensures consistency.
+
 
 <details>
 <summary> Local Installation </summary>
